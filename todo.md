@@ -38,11 +38,11 @@
 - [ ] Create progress visualization components - Frontend
 
 ## Phase 6: Calendar Views & History
-- [ ] Implement weekly calendar view - En progreso
-- [ ] Implement monthly calendar view - En progreso
-- [ ] Add historical record access - En progreso
-- [ ] Create past data browsing interface - En progreso
-- [ ] Add weekly conclusion review page - En progreso
+- [ ] Implement weekly calendar view
+- [ ] Implement monthly calendar view
+- [ ] Add historical record access
+- [ ] Create past data browsing interface
+- [ ] Add weekly conclusion review page
 
 ## Phase 7: Polish & Delivery
 - [x] Refine elegant UI design across all pages
