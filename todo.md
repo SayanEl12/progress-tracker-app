@@ -38,16 +38,16 @@
 - [ ] Create progress visualization components - Frontend
 
 ## Phase 6: Calendar Views & History
-- [ ] Implement weekly calendar view
-- [ ] Implement monthly calendar view
-- [ ] Add historical record access
-- [ ] Create past data browsing interface
-- [ ] Add weekly conclusion review page
+- [ ] Implement weekly calendar view - En progreso
+- [ ] Implement monthly calendar view - En progreso
+- [ ] Add historical record access - En progreso
+- [ ] Create past data browsing interface - En progreso
+- [ ] Add weekly conclusion review page - En progreso
 
 ## Phase 7: Polish & Delivery
-- [ ] Refine elegant UI design across all pages
-- [ ] Implement responsive design
-- [ ] Add loading states and error handling
-- [ ] Write unit tests with Vitest
+- [x] Refine elegant UI design across all pages
+- [x] Implement responsive design
+- [x] Add loading states and error handling
+- [x] Write unit tests with Vitest (20 tests pasando)
 - [ ] Performance optimization
 - [ ] Create checkpoint and prepare for deployment

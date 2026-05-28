@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
-import { Plus, ChevronRight, Target, Zap, TrendingUp } from "lucide-react";
+import { Plus, ChevronRight, Target, Zap, TrendingUp, Calendar, BarChart3 } from "lucide-react";
+import { useLocation } from "wouter";
 import CampoList from "@/components/hierarchy/CampoList";
 import CreateCampoDialog from "@/components/hierarchy/CreateCampoDialog";
 
 export default function Dashboard() {
   const { user, isAuthenticated } = useAuth();
+  const [, setLocation] = useLocation();
   const [showCreateCampo, setShowCreateCampo] = useState(false);
   
   const { data: campos, isLoading, refetch } = trpc.hierarchy.campos.list.useQuery(undefined, {
@@ -36,8 +38,30 @@ export default function Dashboard() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">Bienvenido, {user?.name}</h1>
-          <p className="text-lg text-slate-600">Gestiona tu progreso personal con elegancia y precisión</p>
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h1 className="text-4xl font-bold text-slate-900 mb-2">Bienvenido, {user?.name}</h1>
+              <p className="text-lg text-slate-600">Gestiona tu progreso personal con elegancia y precisión</p>
+            </div>
+            <div className="flex gap-3">
+              <Button
+                variant="outline"
+                className="gap-2"
+                onClick={() => setLocation("/daily")}
+              >
+                <Calendar className="w-4 h-4" />
+                Hoy
+              </Button>
+              <Button
+                variant="outline"
+                className="gap-2"
+                onClick={() => setLocation("/progress")}
+              >
+                <BarChart3 className="w-4 h-4" />
+                Progreso
+              </Button>
+            </div>
+          </div>
         </div>
 
         {/* Quick Stats */}
