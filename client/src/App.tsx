@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import DailyCalendar from "./pages/DailyCalendar";
 import DashboardProgress from "./pages/DashboardProgress";
+import CampoDetail from "./pages/CampoDetail";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/daily" component={DailyCalendar} />
       <Route path="/progress" component={DashboardProgress} />
+      <Route path="/campo/:id" component={CampoDetail} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
