@@ -1,4 +1,6 @@
 export const ENV = {
+  oAuthId: process.env.OAUTH_CLIENT_ID ?? "",
+  oAuthSecret: process.env.OAUTH_CLIENT_SECRET ?? "",
   appId: process.env.VITE_APP_ID ?? "",
   cookieSecret: process.env.JWT_SECRET ?? "",
   databaseUrl: process.env.DATABASE_URL ?? "",

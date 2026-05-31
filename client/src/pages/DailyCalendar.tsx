@@ -1,3 +1,4 @@
+// client/src/pages/DailyCalendar.tsx
 import { useState, useMemo } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
@@ -189,11 +190,10 @@ export default function DailyCalendar() {
               metas.map(meta => (
                 <Card
                   key={meta.id}
-                  className={`border-0 shadow-sm cursor-pointer transition-all ${
-                    selectedMetaId === meta.id
+                  className={`border-0 shadow-sm cursor-pointer transition-all ${selectedMetaId === meta.id
                       ? "ring-2 ring-blue-600 bg-blue-50"
                       : "hover:shadow-md"
-                  }`}
+                    }`}
                   onClick={() => {
                     setSelectedMetaId(meta.id);
                     setTrackableValues({});

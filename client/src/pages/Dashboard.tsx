@@ -1,3 +1,4 @@
+// client/src/pages/Dashboard.tsx
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +13,7 @@ export default function Dashboard() {
   const { user, isAuthenticated } = useAuth();
   const [, setLocation] = useLocation();
   const [showCreateCampo, setShowCreateCampo] = useState(false);
-  
+
   const { data: campos, isLoading, refetch } = trpc.hierarchy.campos.list.useQuery(undefined, {
     enabled: isAuthenticated,
   });

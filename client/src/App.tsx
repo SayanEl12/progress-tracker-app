@@ -1,3 +1,4 @@
+// client/src/App.tsx
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -16,7 +17,7 @@ function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
-      <Route path="" component={Home} />
+      <Route path="/" component={Home} />
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/daily" component={DailyCalendar} />
       <Route path="/progress" component={DashboardProgress} />
@@ -40,7 +41,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider
         defaultTheme="light"
-        // switchable
+      // switchable
       >
         <TooltipProvider>
           <Toaster />

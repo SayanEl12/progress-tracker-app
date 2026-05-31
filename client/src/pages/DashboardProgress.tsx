@@ -1,3 +1,4 @@
+// client/src/pages/DashboardProgress.tsx
 import { useState } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";

@@ -1,3 +1,4 @@
+// server/_core/cookies.ts
 import type { CookieOptions, Request } from "express";
 
 const LOCAL_HOSTS = new Set(["localhost", "127.0.0.1", "::1"]);
@@ -38,11 +39,12 @@ export function getSessionCookieOptions(
   //     : shouldSetDomain
   //       ? hostname
   //       : undefined;
+  const isSecure = isSecureRequest(req);
 
   return {
     httpOnly: true,
     path: "/",
-    sameSite: "none",
-    secure: isSecureRequest(req),
+    sameSite: isSecure ? "none" : "lax",
+    secure: isSecure,//isSecureRequest(req),
   };
 }
