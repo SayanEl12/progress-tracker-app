@@ -51,3 +51,14 @@
 - [x] Write unit tests with Vitest (20 tests pasando)
 - [x] Performance optimization
 - [x] Create checkpoint and prepare for deployment
+
+
+## Phase 8: Meta Detail Page Features (NUEVO)
+- [x] Create MetaDetail page with date selector
+- [x] Implement trackeable management (create/delete)
+- [x] Implement trackeable value registration (binary and numeric)
+- [x] Implement daily notes system
+- [x] Implement AIPoint evaluation button
+- [ ] Add progress visualization for each meta
+- [ ] Add edit functionality for metas
+- [ ] Add visual indicators for meta status (active/completed/pending)

@@ -12,6 +12,7 @@ import DashboardProgress from "./pages/DashboardProgress";
 import CampoDetail from "./pages/CampoDetail";
 import MisionDetail from "./pages/MisionDetail";
 import ObjetivoDetail from "./pages/ObjetivoDetail";
+import MetaDetail from "./pages/MetaDetail";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/campo/:id" component={CampoDetail} />
       <Route path="/mision/:id" component={MisionDetail} />
       <Route path="/objetivo/:id" component={ObjetivoDetail} />
+      <Route path="/meta/:id" component={MetaDetail} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
