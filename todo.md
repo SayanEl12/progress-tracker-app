@@ -59,6 +59,16 @@
 - [x] Implement trackeable value registration (binary and numeric)
 - [x] Implement daily notes system
 - [x] Implement AIPoint evaluation button
-- [ ] Add progress visualization for each meta
-- [ ] Add edit functionality for metas
-- [ ] Add visual indicators for meta status (active/completed/pending)
+- [x] Add progress visualization for each meta - Barras de progreso en tarjetas
+- [x] Add edit functionality for metas - Botón Edit + diálogo pre-rellenado
+- [x] Add visual indicators for meta status (active/completed/pending) - Badges con colores
+- [x] Add configurable weights (a, b) - Sliders interactivos en diálogo
+- [x] Display weight formula on cards - Mostrar fórmula en cada tarjeta
+
+
+## Phase 9: Real Progress Calculation (PENDIENTE)
+- [ ] Fix progress router to calculate real trackable progress (not placeholder 0.5)
+- [ ] Implement real Meta progress calculation: (a × AIPoints + b × Trackeables) / 100
+- [ ] Wire progress bars in Meta cards to real data from backend
+- [ ] Add loading/error states for progress values
+- [ ] Test progress calculation with sample data
